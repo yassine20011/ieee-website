@@ -4,8 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NotFound from "@/components/NotFound";
 
+import Hero from "@/sections/Hero";
+
 // Lazy load sections for better initial performance
-const Hero = lazy(() => import("@/sections/Hero"));
 const About = lazy(() => import("@/sections/About"));
 const Team = lazy(() => import("@/sections/Team"));
 const Supervisors = lazy(() => import("@/sections/Supervisors"));
@@ -26,8 +27,8 @@ function HomePage() {
     <div className="min-h-screen bg-white selection:bg-primary/10 selection:text-primary">
       <Navbar />
       <main>
+        <Hero />
         <Suspense fallback={<SectionLoader />}>
-          <Hero />
           <About />
           <Team />
           <Supervisors />
