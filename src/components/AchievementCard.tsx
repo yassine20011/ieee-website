@@ -70,9 +70,9 @@ export default function AchievementCard({ achievement, index }: AchievementCardP
                             <h4 className="text-2xl font-black text-ieee-gold mb-1 uppercase tracking-tight">
                                 {achievement.prize}
                             </h4>
-                            {achievement.robotName && (
+                            {(achievement.projectName || achievement.teamName) && (
                                 <p className="text-white font-bold text-lg">
-                                    {achievement.robotName}
+                                    {achievement.projectName || achievement.teamName}
                                 </p>
                             )}
                         </div>
