@@ -12,6 +12,7 @@ import Achievements from "@/sections/Achievements";
 import Cells from "@/sections/Cells";
 import Contact from "@/sections/Contact";
 import TeamPage from "@/pages/TeamPage";
+import AchievementsPage from "@/pages/AchievementsPage";
 
 function HomePage() {
   return (
@@ -37,6 +38,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/team" element={<TeamPage />} />
+      <Route path="/achievements" element={<AchievementsPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
