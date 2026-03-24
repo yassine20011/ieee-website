@@ -68,7 +68,7 @@ export default function RobotCaptcha({ onVerify, reset }: RobotCaptchaProps) {
             <div className="flex flex-col items-center justify-center">
                 <div className="w-8 h-8 opacity-60">
                     <img
-                        src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                        src="https://www.gstatic.com/recaptcha/api2/logo_48.webp"
                         alt="reCAPTCHA"
                         className="w-full h-full object-contain grayscale brightness-125"
                     />

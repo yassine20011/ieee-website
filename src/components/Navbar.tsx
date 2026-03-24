@@ -44,7 +44,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="relative">
                         <img
-                            src="/assets/logo.jpg"
+                            src="/assets/logo.webp"
                             alt="IEEE EMSI Marrakesh Logo"
                             loading="lazy"
                             className="h-10 w-10 object-contain rounded-lg transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(255,184,28,0.4)]"

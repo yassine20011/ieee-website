@@ -21,7 +21,7 @@ export const achievements: Achievement[] = [
         projectName: "AT Vision",
         competitionName: "COCIA-conf 2025",
         institution: "EST Casablanca",
-        image: "/assets/achievements/cocia-1st.jpg",
+        image: "/assets/achievements/cocia-1st.webp",
     },
     {
         prize: "1st Place",
@@ -29,7 +29,7 @@ export const achievements: Achievement[] = [
         projectName: "EyeTalk",
         competitionName: "AISEC 2025",
         institution: "ENSA Marrakesh",
-        image: "/assets/achievements/aisec_ziad.jpg",
+        image: "/assets/achievements/aisec_ziad.webp",
     },
     {
         prize: "1st Place",
@@ -37,7 +37,7 @@ export const achievements: Achievement[] = [
         projectName: "AT Vision",
         competitionName: "AUI Entrepreneurship Award 2025",
         institution: "Al Akhawayn University",
-        image: "/assets/achievements/aui.jpg",
+        image: "/assets/achievements/aui.webp",
     },
     {
       prize: "3rd Place",
@@ -45,7 +45,7 @@ export const achievements: Achievement[] = [
       projectName: "NeuroDrive",
       competitionName: "Road Safety Competition 2025",
       institution: "ENSA Marrakech",
-      image: "/assets/achievements/neurodrive.jpeg",
+      image: "/assets/achievements/neurodrive.webp",
     },
     {
       prize: "3rd Place",
@@ -53,7 +53,7 @@ export const achievements: Achievement[] = [
       teamName: "THE MORIARTYS",
       competitionName: "ST4F1T CTF",
       institution: "ENSA Marrakech",
-      image: "/assets/achievements/st4f1t.jpg",
+      image: "/assets/achievements/st4f1t.webp",
     },
     {
       prize: "3rd Place",
@@ -61,7 +61,7 @@ export const achievements: Achievement[] = [
       projectName: "SafeX",
       competitionName: "Driving Change: A Challenge for Future Engineers and Mobility Innovators 2025",
       institution: "CAPGEMINI Engineering",
-      image: "/assets/achievements/capgemini.jpg",
+      image: "/assets/achievements/capgemini.webp",
     },
     {
         prize: "3rd Place",
@@ -69,7 +69,7 @@ export const achievements: Achievement[] = [
         projectName: "FireTruck",
         competitionName: "COCIA-conf 2025",
         institution: "EST Casablanca",
-        image: "/assets/achievements/cocia_3rd.jpg",
+        image: "/assets/achievements/cocia_3rd.webp",
     },
     {
         prize: "1st Place",
@@ -77,7 +77,7 @@ export const achievements: Achievement[] = [
         projectName: "AT Vision",
         competitionName: "Hackathon ISMAGI 2025 - Water: The Flow of Innovation",
         institution: "ISMAGI Rabat",
-        image: "/assets/achievements/ismagi.jpg",
+        image: "/assets/achievements/ismagi.webp",
     },
     {
         prize: "3rd Place",
@@ -85,7 +85,7 @@ export const achievements: Achievement[] = [
         projectName: "FireTruck",
         competitionName: "AISEC 2025",
         institution: "ENSA Marrakech",
-        image: "/assets/achievements/aisec_yahya.jpg",
+        image: "/assets/achievements/aisec_yahya.webp",
     },
     {
         prize: "Best Design Award",
@@ -93,6 +93,6 @@ export const achievements: Achievement[] = [
         projectName: "RoboForge",
         competitionName: "Robot Basketball Competition 2025",
         institution: "ENSA Marrakech",
-        image: "/assets/achievements/roboforge.jpeg",
+        image: "/assets/achievements/roboforge.webp",
     },
 ];

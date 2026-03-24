@@ -35,7 +35,7 @@ export const events: Event[] = [
         title: "EMSIstes INNOV'26",
         description: "A competition that offers the perfect opportunity to showcase your project and contribute to the development of intelligent technologies for a sustainable and inclusive future.",
         date: "May 16, 2026",
-        image: "/assets/events/2025-2026/emsistes_innov/thumb.jpg",
+        image: "/assets/events/2025-2026/emsistes_innov/thumb.webp",
         category: "Competition",
         type: "competition",
         location: "EMSI Marrakesh",
@@ -49,7 +49,7 @@ export const events: Event[] = [
             "Collaborate and network with like-minded innovators and peers"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/emsistes_innov/thumb.jpg" },
+            { type: "image", url: "/assets/events/2025-2026/emsistes_innov/thumb.webp" },
         ],
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSevHzkE1GcGxOSTjUK9pt-V-3Hbi6tH4iXHZ2oefE9-M5Q0dQ/viewform?usp=sharing&ouid=105034487534648453116",
     },
@@ -60,7 +60,7 @@ export const events: Event[] = [
         title: "Vision AI Competition",
         description: "A competition showcasing innovative AI projects and solutions.",
         date: "February 14, 2026",
-        image: "/assets/events/2025-2026/vision_ai/thumb.jpg",
+        image: "/assets/events/2025-2026/vision_ai/thumb.webp",
         category: "Competition",
         type: "competition",
         location: "EMSI Marrakesh",
@@ -80,21 +80,21 @@ export const events: Event[] = [
             "Natural Language Processing"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/thumb.jpg" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/thumb.webp" },
             { type: "video", url: "/assets/events/2025-2026/vision_ai/thriller.mp4" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo1.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo2.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo3.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo4.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo5.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo6.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo7.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo8.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo9.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo10.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo11.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo12.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo13.jpg" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo1.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo2.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo3.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo4.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo5.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo6.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo7.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo8.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo9.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo10.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo11.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo12.webp" },
+            { type: "image", url: "/assets/events/2025-2026/vision_ai/photo13.webp" },
         ]
     },
     {
@@ -102,7 +102,7 @@ export const events: Event[] = [
         title: "CATIA Design Bootcamp",
         description: "Bootcamp featuring two workshops on CATIA for mechanical design and CAD fundamentals.",
         date: "December 24, 2025",
-        image: "/assets/events/2025-2026/catia/thumb.jpg",
+        image: "/assets/events/2025-2026/catia/thumb.webp",
         category: "Bootcamp",
         type: "bootcamp",
         location: "EMSI Marrakesh",
@@ -128,11 +128,11 @@ export const events: Event[] = [
             "Assembly Design"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/catia/photo1.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/catia/photo2.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/catia/photo3.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/catia/photo4.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/catia/photo5.jpg" },
+            { type: "image", url: "/assets/events/2025-2026/catia/photo1.webp" },
+            { type: "image", url: "/assets/events/2025-2026/catia/photo2.webp" },
+            { type: "image", url: "/assets/events/2025-2026/catia/photo3.webp" },
+            { type: "image", url: "/assets/events/2025-2026/catia/photo4.webp" },
+            { type: "image", url: "/assets/events/2025-2026/catia/photo5.webp" },
             { type: "video", url: "/assets/events/2025-2026/catia/video.mp4" },
         ]
     },
@@ -141,7 +141,7 @@ export const events: Event[] = [
         title: "Cyber Security & CTFs Bootcamp",
         description: "Intensive bootcamp covering cybersecurity fundamentals and Capture The Flag competitions.",
         date: "December 10, 2025",
-        image: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/thumb.jpg",
+        image: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/thumb.webp",
         category: "Bootcamp",
         type: "bootcamp",
         location: "EMSI Marrakesh",
@@ -160,16 +160,16 @@ export const events: Event[] = [
             "Dogbolt"
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo1.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo2.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo3.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo4.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo5.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo6.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo7.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo8.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo9.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo10.jpg" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo1.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo2.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo3.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo4.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo5.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo6.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo7.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo8.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo9.webp" },
+            { type: "image", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/photo10.webp" },
             { type: "video", url: "/assets/events/2025-2026/cybersecurity_and_ctfs_bootcamp/video.mp4" },
         ]
     },
@@ -178,7 +178,7 @@ export const events: Event[] = [
         title: "Initiation en Entrepreneuriat",
         description: "Introduction to entrepreneurship and startup culture.",
         date: "November 19, 2025",
-        image: "/assets/events/2025-2026/entrepreneuriat/thumb.png",
+        image: "/assets/events/2025-2026/entrepreneuriat/thumb.webp",
         category: "Talk",
         type: "talk",
         location: "EMSI Marrakesh",
@@ -191,10 +191,10 @@ export const events: Event[] = [
             }
         ],
         media: [
-            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo1.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo2.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo3.jpg" },
-            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo5.jpg" },
+            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo1.webp" },
+            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo2.webp" },
+            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo3.webp" },
+            { type: "image", url: "/assets/events/2025-2026/entrepreneuriat/photo5.webp" },
             { type: "video", url: "/assets/events/2025-2026/entrepreneuriat/video.mp4" },
         ]
     },
@@ -203,7 +203,7 @@ export const events: Event[] = [
         title: "EMSIstes INNOV'25",
         description: "Innovation competition focused on smart systems and emerging technologies.",
         date: "May 24, 2025",
-        image: "/assets/events/2024-2025/emsistes_innov/thumb.jpg",
+        image: "/assets/events/2024-2025/emsistes_innov/thumb.webp",
         category: "Competition",
         type: "competition",
         location: "EMSI Marrakesh",
@@ -223,7 +223,7 @@ export const events: Event[] = [
             "Prototyping Tools"
         ],
         media: [
-            { type: "image", url: "/assets/events/2024-2025/emsistes_innov/thumb.jpg" },
+            { type: "image", url: "/assets/events/2024-2025/emsistes_innov/thumb.webp" },
         ]
     },
     {
@@ -231,7 +231,7 @@ export const events: Event[] = [
         title: "SolidWorks Workshop",
         description: "Hands-on workshop on 3D CAD modeling using SolidWorks.",
         date: "April 30, 2025",
-        image: "/assets/events/2024-2025/solidworks/thumb.jpg",
+        image: "/assets/events/2024-2025/solidworks/thumb.webp",
         category: "Workshop",
         type: "workshop",
         location: "EMSI Marrakesh",
@@ -250,7 +250,7 @@ export const events: Event[] = [
             "Technical Drawings"
         ],
         media: [
-            { type: "image", url: "/assets/events/2024-2025/solidworks/thumb.jpg" },
+            { type: "image", url: "/assets/events/2024-2025/solidworks/thumb.webp" },
         ]
     },
     {
@@ -258,7 +258,7 @@ export const events: Event[] = [
         title: "Cloud Computing Basics With AWS",
         description: "Introduction to cloud computing concepts and AWS services.",
         date: "April 24, 2025",
-        image: "/assets/events/2024-2025/cloud_computing_with_aws/thumb.jpg",
+        image: "/assets/events/2024-2025/cloud_computing_with_aws/thumb.webp",
         category: "Workshop",
         type: "workshop",
         location: "EMSI Marrakesh",
@@ -279,11 +279,11 @@ export const events: Event[] = [
             "AWS CLI"
         ],
         media: [
-            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo1.jpg" },
-            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo2.jpg" },
-            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo3.jpg" },
-            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo4.jpg" },
-            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo5.jpg" },
+            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo1.webp" },
+            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo2.webp" },
+            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo3.webp" },
+            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo4.webp" },
+            { type: "image", url: "/assets/events/2024-2025/cloud_computing_with_aws/photo5.webp" },
         ]
     },
     {
@@ -291,7 +291,7 @@ export const events: Event[] = [
         title: "Power Up with Linux: Learn, Practice, Advance",
         description: "Comprehensive Linux fundamentals and command-line mastery.",
         date: "April 19, 2025",
-        image: "/assets/events/2024-2025/linux/thumb.jpg",
+        image: "/assets/events/2024-2025/linux/thumb.webp",
         category: "Workshop",
         type: "workshop",
         location: "EMSI Marrakesh",
@@ -316,9 +316,9 @@ export const events: Event[] = [
             "Package Managers (apt, yum)"
         ],
         media: [
-            { type: "image", url: "/assets/events/2024-2025/linux/photo1.jpg" },
-            { type: "image", url: "/assets/events/2024-2025/linux/photo2.jpg" },
-            { type: "image", url: "/assets/events/2024-2025/linux/photo3.jpg" },
+            { type: "image", url: "/assets/events/2024-2025/linux/photo1.webp" },
+            { type: "image", url: "/assets/events/2024-2025/linux/photo2.webp" },
+            { type: "image", url: "/assets/events/2024-2025/linux/photo3.webp" },
         ]
     },
 ];

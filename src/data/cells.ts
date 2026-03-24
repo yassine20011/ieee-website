@@ -19,7 +19,7 @@ export const cells: Cell[] = [
             "Creativity, prototyping & project valorization",
             "Supporting student and faculty initiatives",
         ],
-        image: "/assets/cells/cvtt.jpg",
+        image: "/assets/cells/cvtt.webp",
         joinUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfGmHm7RQQGyEChSiTfYOihIWI9l0VZsenQUMV1e4kRfAJ83g/viewform",
     },
 ];

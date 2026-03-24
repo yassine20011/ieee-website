@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="col-span-1 md:col-span-1">
                         <div className="flex items-center gap-3 mb-6">
                             <img
-                                src="/assets/logo.jpg"
+                                src="/assets/logo.webp"
                                 alt="IEEE EMSI Marrakesh Logo"
                                 loading="lazy"
                                 className="h-12 w-12 object-contain rounded-lg opacity-80"
