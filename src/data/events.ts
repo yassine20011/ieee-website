@@ -51,7 +51,7 @@ export const events: Event[] = [
         media: [
             { type: "image", url: "/assets/events/2025-2026/emsistes_innov/thumb.webp" },
         ],
-        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSevHzkE1GcGxOSTjUK9pt-V-3Hbi6tH4iXHZ2oefE9-M5Q0dQ/viewform?usp=sharing&ouid=105034487534648453116",
+        registrationLink: "https://docs.google.com/forms/d/1Qi6WkSJHSKbc_bZj1OxLzblbOd6XIo3aI0z_Vt78yDs/",
     },
 
     /* Past Events */
