@@ -30,7 +30,29 @@ export interface Event {
 
 export const events: Event[] = [
     /* Upcoming Events */
-
+    {
+        id: "emsistes-innov26",
+        title: "EMSIstes INNOV'26",
+        description: "A competition that offers the perfect opportunity to showcase your project and contribute to the development of intelligent technologies for a sustainable and inclusive future.",
+        date: "May 16, 2026",
+        image: "/assets/events/2025-2026/emsistes_innov/thumb.jpg",
+        category: "Competition",
+        type: "competition",
+        location: "EMSI Marrakesh",
+        isPast: false,
+        detailedDescription: "Join us for an exciting innovation competition where participants showcase their projects in intelligent and emerging technologies. Competitors will tackle real-world challenges, contribute to building solutions for a sustainable and inclusive future, and present their ideas to a panel of experts and industry professionals.",
+        objectives: [
+            "Showcase innovative projects in intelligent and emerging technologies",
+            "Contribute to the development of solutions for a sustainable and inclusive future",
+            "Apply advanced technical and creative skills to real-world challenges",
+            "Present ideas and solutions to experts and industry professionals",
+            "Collaborate and network with like-minded innovators and peers"
+        ],
+        media: [
+            { type: "image", url: "/assets/events/2025-2026/emsistes_innov/thumb.jpg" },
+        ],
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSevHzkE1GcGxOSTjUK9pt-V-3Hbi6tH4iXHZ2oefE9-M5Q0dQ/viewform?usp=sharing&ouid=105034487534648453116",
+    },
 
     /* Past Events */
     {
