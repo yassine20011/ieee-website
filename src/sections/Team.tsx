@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { teamMembers } from "@/data/team";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,9 +6,8 @@ import { Github, Linkedin, Instagram, Mail } from "lucide-react";
 import { SOCIAL_LINKS } from "@/data/socials";
 
 export default function Team() {
-    const [showAll, setShowAll] = useState(false);
     const INITIAL_COUNT = 5;
-    const displayedMembers = showAll ? teamMembers : teamMembers.slice(0, INITIAL_COUNT);
+    const displayedMembers = teamMembers.slice(0, INITIAL_COUNT);
 
     return (
         <section id="team" className="py-24 bg-ieee-navy">
@@ -95,21 +94,19 @@ export default function Team() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
                     >
-                        <button
-                            onClick={() => setShowAll(!showAll)}
-                            className="group relative px-8 py-3 font-bold text-white transition-all duration-300 bg-transparent border-2 border-ieee-gold rounded-full hover:bg-ieee-gold hover:text-ieee-navy overflow-hidden"
+                        <Link
+                            to="/team"
+                            onClick={() => window.scrollTo(0, 0)}
+                            className="group relative inline-flex px-8 py-3 font-bold text-white transition-all duration-300 bg-transparent border-2 border-ieee-gold rounded-full hover:bg-ieee-gold hover:text-ieee-navy overflow-hidden"
                         >
                             <span className="relative z-10 flex items-center gap-2">
-                                {showAll ? "Show Less" : "Show All Members"}
-                                <motion.span
-                                    animate={{ rotate: showAll ? 180 : 0 }}
-                                    transition={{ duration: 0.3 }}
-                                >
-                                    ↓
-                                </motion.span>
+                                Show All Members
+                                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                                    →
+                                </span>
                             </span>
                             <div className="absolute inset-0 z-0 bg-ieee-gold transition-transform duration-300 translate-y-full group-hover:translate-y-0" />
-                        </button>
+                        </Link>
                     </motion.div>
                 )}
 

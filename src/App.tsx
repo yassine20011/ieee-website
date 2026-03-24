@@ -11,6 +11,7 @@ import Events from "@/sections/Events";
 import Achievements from "@/sections/Achievements";
 import Cells from "@/sections/Cells";
 import Contact from "@/sections/Contact";
+import TeamPage from "@/pages/TeamPage";
 
 function HomePage() {
   return (
@@ -35,6 +36,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/team" element={<TeamPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
