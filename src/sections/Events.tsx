@@ -1,14 +1,15 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { events } from "@/data/events";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, MapPin } from "lucide-react";
 import EventModal from "@/components/EventModal";
 import type { Event } from "@/data/events";
-import { useState } from "react";
 
 export default function Events() {
     const upcomingEvents = events.filter(e => !e.isPast);
-    const pastEvents = events.filter(e => e.isPast);
+    const pastEvents = events.filter(e => e.isPast).slice(0, 4);
     const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -134,6 +135,29 @@ export default function Events() {
                             </motion.div>
                         ))}
                     </div>
+
+                    {events.filter(e => e.isPast).length > 4 && (
+                        <motion.div
+                            className="flex justify-center mt-12"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.2 }}
+                        >
+                            <Link
+                                to="/events"
+                                onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
+                                className="group relative inline-flex px-8 py-3 font-bold text-white transition-all duration-300 bg-transparent border-2 border-ieee-blue rounded-full hover:bg-ieee-blue hover:text-white overflow-hidden"
+                            >
+                                <span className="relative z-10 flex items-center gap-2">
+                                    Show All Past Events
+                                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                                        →
+                                    </span>
+                                </span>
+                                <div className="absolute inset-0 z-0 bg-ieee-blue transition-transform duration-300 translate-y-full group-hover:translate-y-0" />
+                            </Link>
+                        </motion.div>
+                    )}
                 </div>
             </div>
 

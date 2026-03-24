@@ -96,7 +96,7 @@ export default function Team() {
                     >
                         <Link
                             to="/team"
-                            onClick={() => window.scrollTo(0, 0)}
+                            onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
                             className="group relative inline-flex px-8 py-3 font-bold text-white transition-all duration-300 bg-transparent border-2 border-ieee-gold rounded-full hover:bg-ieee-gold hover:text-ieee-navy overflow-hidden"
                         >
                             <span className="relative z-10 flex items-center gap-2">
