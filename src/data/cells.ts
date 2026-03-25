@@ -11,7 +11,7 @@ export const cells: Cell[] = [
     {
         id: "cvtt",
         name: "CVTT (Cellule de Valorisation & Transfert de Technologie)",
-        description: "A dedicated space for valorizing innovation projects and technology transfer. CVTT transforms student ideas into impactful technical and scientific projects, bridging the gap between research and industry.",
+        description: "The Innovation Unit supports students from concept to prototype, and through to incubation or startup creation. It provides technical and business guidance, intellectual property protection, and access to funding to boost the technological maturity of projects.",
         activities: [
             "Fostering campus-wide innovation",
             "Technical & scientific project mentoring",
