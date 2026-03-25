@@ -5,7 +5,6 @@ import { X, Mail, User, Phone, Sparkles, Loader2, CheckCircle2 } from "lucide-re
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { CONTACT_EMAIL } from "@/data/socials";
 import RobotCaptcha from "./RobotCaptcha";
 
 interface JoinUsDialogProps {
