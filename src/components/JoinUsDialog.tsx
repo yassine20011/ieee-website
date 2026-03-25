@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Mail, User, Phone, Sparkles, Loader2, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -24,6 +25,17 @@ export default function JoinUsDialog({ isOpen, onClose }: JoinUsDialogProps) {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
     const [errorMessage, setErrorMessage] = useState("");
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [isOpen]);
 
     const resetForm = () => {
         setFormData({ name: "", email: "", phone: "", interests: "" });
@@ -84,7 +96,7 @@ export default function JoinUsDialog({ isOpen, onClose }: JoinUsDialogProps) {
         }
     };
 
-    return (
+    return createPortal(
         <AnimatePresence>
             {isOpen && (
                 <>
@@ -94,7 +106,7 @@ export default function JoinUsDialog({ isOpen, onClose }: JoinUsDialogProps) {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={handleClose}
-                        className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50"
+                        className="fixed inset-0 bg-black/80 backdrop-blur-md z-50"
                     />
 
                     {/* Dialog */}
@@ -282,13 +294,6 @@ export default function JoinUsDialog({ isOpen, onClose }: JoinUsDialogProps) {
                                                     </Button>
                                                 </div>
                                             </form>
-
-                                            {/* Info Note */}
-                                            <div className="mt-6 p-4 rounded-2xl bg-ieee-blue/10 border border-ieee-blue/20">
-                                                <p className="text-sm text-gray-400 text-center">
-                                                    📧 Your application will be sent to <span className="text-ieee-gold font-semibold">{CONTACT_EMAIL}</span>
-                                                </p>
-                                            </div>
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
@@ -297,6 +302,7 @@ export default function JoinUsDialog({ isOpen, onClose }: JoinUsDialogProps) {
                     </div>
                 </>
             )}
-        </AnimatePresence>
+        </AnimatePresence>,
+        document.body
     );
 }
