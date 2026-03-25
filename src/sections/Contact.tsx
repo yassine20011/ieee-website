@@ -16,6 +16,7 @@ export default function Contact() {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [errorMessage, setErrorMessage] = useState("");
 
     // Bot protection state
     const [isVerified, setIsVerified] = useState(false);
@@ -32,16 +33,19 @@ export default function Contact() {
         e.preventDefault();
 
         if (!isVerified) {
+            setErrorMessage("Please verify that you are not a robot.");
             setSubmitStatus('error');
             return;
         }
 
         setIsSubmitting(true);
         setSubmitStatus('idle');
+        setErrorMessage("");
 
         try {
             // Basic validation
             if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+                setErrorMessage("Please fill in all required fields.");
                 setSubmitStatus('error');
                 return;
             }
@@ -49,6 +53,7 @@ export default function Contact() {
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(formData.email)) {
+                setErrorMessage("Please enter a valid email address.");
                 setSubmitStatus('error');
                 return;
             }
@@ -66,8 +71,10 @@ export default function Contact() {
                 }),
             });
 
+            const data = await response.json();
+
             if (!response.ok) {
-                throw new Error('Failed to send message');
+                throw new Error(data.error || 'Failed to send message');
             }
 
             // Reset form on success
@@ -77,6 +84,7 @@ export default function Contact() {
             setIsVerified(false);
         } catch (error) {
             console.error('Contact form error:', error);
+            setErrorMessage(error instanceof Error ? error.message : 'Something went wrong. Please try again later.');
             setSubmitStatus('error');
         } finally {
             setIsSubmitting(false);
@@ -227,7 +235,7 @@ export default function Contact() {
 
                                     {submitStatus === 'error' && (
                                         <div className="p-4 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-medium">
-                                            ✗ Please fill in all fields correctly (including the security check).
+                                            ✗ {errorMessage || "Please fill in all fields correctly (including the security check)."}
                                         </div>
                                     )}
 

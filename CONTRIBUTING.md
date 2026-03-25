@@ -22,7 +22,12 @@ npm install
 npm run dev
 ```
 
-The site will be available at [http://localhost:5173/](http://localhost:5173/).
+> [!NOTE]
+> **`npm run dev` is now aliased to `vercel dev`**.  
+This ensures that both the frontend (Vite) and the backend (Vercel Serverless Functions in `/api`) are running simultaneously. It also automatically loads your `.env` variables.
+
+- To run only the frontend with Vite's fast refresh (no API support): `npm run frontend`
+- The site will be available at [http://localhost:3000/](http://localhost:3000/) (or the port specified by Vercel).
 
 ---
 

@@ -32,6 +32,7 @@ Welcome to the official website of the IEEE Student Branch at EMSI Marrakesh. Th
     ```bash
     npm run dev
     ```
+    *(Note: This is aliased to `vercel dev` to support serverless functions for forms and local `.env` variables)*
 
 ---
 

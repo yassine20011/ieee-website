@@ -82,14 +82,16 @@ export default function JoinUsDialog({ isOpen, onClose }: JoinUsDialogProps) {
                 }),
             });
 
+            const data = await response.json();
+
             if (!response.ok) {
-                throw new Error("Failed to send application");
+                throw new Error(data.error || "Failed to send application");
             }
 
             setSubmitStatus("success");
-        } catch {
+        } catch (error) {
             setSubmitStatus("error");
-            setErrorMessage("Something went wrong. Please try again later.");
+            setErrorMessage(error instanceof Error ? error.message : "Something went wrong. Please try again later.");
         } finally {
             setIsSubmitting(false);
         }

@@ -9,6 +9,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  if (!process.env.RESEND_API_KEY) {
+    console.error('RESEND_API_KEY is not configured');
+    return res.status(500).json({ error: 'Email service not configured. Please check environment variables.' });
+  }
+
   try {
     const { fullName, email, phone, whyJoin } = req.body;
 
@@ -29,9 +34,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }),
     });
 
+    if (data.error) {
+      console.error('Resend API error:', data.error);
+      return res.status(400).json({ error: data.error.message || 'Failed to send application' });
+    }
+
     return res.status(200).json(data);
   } catch (error) {
-    console.error('Resend error:', error);
-    return res.status(500).json({ error: 'Failed to send email' });
+    console.error('Unexpected error in send handler:', error);
+    return res.status(500).json({ error: 'Internal server error while sending application' });
   }
 }
