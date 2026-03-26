@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Home, ArrowLeft, Search } from "lucide-react";
+import { Home, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
@@ -114,20 +114,7 @@ export default function NotFound() {
                 </motion.div>
             </div>
 
-            {/* Floating Elements */}
-            <motion.div
-                className="absolute top-10 right-10 text-ieee-gold/20"
-                animate={{ 
-                    rotate: 360,
-                    scale: [1, 1.2, 1]
-                }}
-                transition={{ 
-                    rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-                    scale: { duration: 4, repeat: Infinity, ease: "easeInOut" }
-                }}
-            >
-                <Search size={40} />
-            </motion.div>
+
         </div>
     );
 }
