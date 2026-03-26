@@ -1,8 +1,27 @@
 import { motion } from "framer-motion";
 import { Home, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export default function NotFound() {
+    const navigate = useNavigate();
+
+    const handleNavigation = (sectionId: string) => {
+        // Navigate to home page first
+        navigate('/');
+        // Poll for the element to exist before scrolling
+        const checkForElement = () => {
+            const element = document.querySelector(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // Try again after 50ms if element doesn't exist yet
+                setTimeout(checkForElement, 50);
+            }
+        };
+        // Start checking after a small delay
+        setTimeout(checkForElement, 100);
+    };
     return (
         <div className="min-h-screen bg-ieee-navy flex items-center justify-center relative overflow-hidden">
             {/* Circuit Pattern Background */}
@@ -66,7 +85,7 @@ export default function NotFound() {
                         transition={{ duration: 0.6, delay: 1 }}
                     >
                         <Button
-                            onClick={() => window.location.href = '/'}
+                            onClick={() => navigate('/')}
                             className="rounded-xl px-8 py-3 bg-ieee-gold text-ieee-navy hover:bg-ieee-gold/90 font-bold flex items-center gap-2 shadow-gold-glow transition-all hover:scale-105"
                         >
                             <Home size={20} />
@@ -100,14 +119,14 @@ export default function NotFound() {
                                 { name: "Events", href: "#events" },
                                 { name: "Contact", href: "#contact" },
                             ].map((link, index) => (
-                                <a
+                                <button
                                     key={link.name}
-                                    href={`/${link.href}`}
+                                    onClick={() => handleNavigation(link.href)}
                                     className="text-gray-400 hover:text-ieee-gold transition-colors font-medium"
                                     style={{ animationDelay: `${1.4 + index * 0.1}s` }}
                                 >
                                     {link.name}
-                                </a>
+                                </button>
                             ))}
                         </div>
                     </motion.div>
