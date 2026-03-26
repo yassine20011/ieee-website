@@ -30,9 +30,9 @@ Welcome to the official website of the IEEE Student Branch at EMSI Marrakesh. Th
     ```
 3.  **Run the development server**:
     ```bash
-    npm run dev
+    vercel dev
     ```
-    *(Note: This is aliased to `vercel dev` to support serverless functions for forms and local `.env` variables)*
+    *(Note: Using `vercel dev` instead of `npm run dev` ensures that both the frontend and serverless functions are running with full environment variable support. `npm run dev` only runs the frontend.)*
 
 ---
 
